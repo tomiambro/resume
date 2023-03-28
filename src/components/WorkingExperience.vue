@@ -1,21 +1,39 @@
 <script setup>
+import { onMounted } from 'vue'
+
 defineProps({
   company: {
     type: String,
     required: true
+  },
+  position: {
+    type: String,
+    required: true
+  },
+  link: {
+    type: String,
+    required: false
   },
   info: {
     type: String,
     required: false
   }
 })
-</script>setup>
 
+onMounted(() => {
+  console.log(`the component is now mounted.`)
+})
+</script>
 
 <template>
-  <div class="experience-item">
-    <h4>{{ company }}</h4>
-    <p>{{ info }}</p>
+  <div class="experience-item flex flex-col mt-5">
+    <div>
+      <a :href="link" target="_blank">{{ company }}</a>
+      <h5>{{ position }}</h5>
+    </div>
+    <div>
+      <p>{{ info }}</p>
+    </div>
   </div>
 </template>
 
@@ -42,6 +60,6 @@ h3 {
   }
 }
 .experience-item {
-    display: flex;
+  display: flex;
 }
 </style>

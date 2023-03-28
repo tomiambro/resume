@@ -1,12 +1,33 @@
 <script setup>
-import ExperienceItem from "./WorkingExperience.vue"
-</script>setup>
-
+import ExperienceItem from './WorkingExperience.vue'
+</script>
 
 <template>
   <div class="experience">
     <div class="subclass"><h2 class="green">Experience</h2></div>
-    <ExperienceItem company="Kubikware" />
+    <ExperienceItem
+      company="Kubikware"
+      link="https://www.kubikware.com"
+      position="Sr Software Developer"
+      info="Develop a music distribution API using python and django rest-framework, delivering 30K assets each day."
+    />
+    <ExperienceItem
+      company="JP Morgan & Chase"
+      link="https://www.jpmorgan.com/"
+      position="Ssr Software Developer"
+      info="Develop a music distribution API using python and django rest-framework, delivering 30K assets each day."
+    />
+    <ExperienceItem
+      company="Grexor"
+      link="http://www.grexor.com/"
+      position="Sr Software Developer"
+      info="Develop a music distribution API using python and django rest-framework, delivering 30K assets each day."
+    />
+    <ExperienceItem
+      company="Programming 4 Design"
+      position="Jr Software Developer"
+      info="Develop a music distribution API using python and django rest-framework, delivering 30K assets each day."
+    />
   </div>
 </template>
 
@@ -34,6 +55,6 @@ h3 {
 }
 
 .experience div {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 </style>

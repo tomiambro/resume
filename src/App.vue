@@ -1,13 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Title from './components/Title.vue'
-import Experience from './components/Experience.vue';
+import Experience from './components/Experience.vue'
 </script>
 
 <template>
   <header>
-    <div class="container mx-auto">
-      <Title msg="Building software since 2015." />
+    <div class="container mx-auto flex flex-col justify-center">
+      <Title msg="Building software for companies big and small since 2015." />
       <Experience />
       <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -23,7 +23,6 @@ import Experience from './components/Experience.vue';
 header {
   line-height: 1.5;
   max-height: 100vh;
-  
 }
 
 .logo {
@@ -83,6 +82,6 @@ nav a:first-of-type {
   }
   .wrapper div {
     padding: 0 15px;
-}
+  }
 }
 </style>

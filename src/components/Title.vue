@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="title container flex flex-wrap">
+  <div class="title container justify-between">
     <div class="text">
       <h1 class="green">Tomás Horacio Ambrogi</h1>
       <h4>
@@ -16,7 +16,13 @@ defineProps({
       </h4>
     </div>
     <div class="image">
-      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+      <img
+        alt="Vue logo"
+        class="logo rounded-full"
+        src="@/assets/logo.svg"
+        width="125"
+        height="125"
+      />
     </div>
   </div>
 </template>
@@ -44,10 +50,10 @@ h3 {
   }
 }
 .title {
-    display: flex;
+  display: flex;
 }
 
 .title div {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 </style>
