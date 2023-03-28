@@ -1,18 +1,21 @@
 <script setup>
 defineProps({
-  msg: {
+  company: {
     type: String,
     required: true
+  },
+  info: {
+    type: String,
+    required: false
   }
 })
-</script>
+</script>setup>
+
 
 <template>
-  <div class="resume">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      Resume
-    </h3>
+  <div class="experience-item">
+    <h4>{{ company }}</h4>
+    <p>{{ info }}</p>
   </div>
 </template>
 
@@ -27,15 +30,18 @@ h3 {
   font-size: 1.2rem;
 }
 
-.resume h1,
-.resume h3 {
+.experience-item h1,
+.experience-item h3 {
   text-align: center;
 }
 
 @media (min-width: 1024px) {
-  .resume h1,
-  .resume h3 {
+  .experience-item h1,
+  .experience-item h3 {
     text-align: left;
   }
+}
+.experience-item {
+    display: flex;
 }
 </style>
