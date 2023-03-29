@@ -3,7 +3,6 @@ import App from './App.vue'
 import router from './router'
 
 import './assets/main.css'
-// import './firebase.js'
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -19,7 +18,7 @@ const firebaseConfig = {
   };
 
 const firebaseApp = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const analytics = getAnalytics(firebaseApp);
 
 const app = createApp(App)
 
