@@ -1,18 +1,16 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import Title from './components/Title.vue'
-import Experience from './components/Experience.vue'
+import TitleSection from './components/Title.vue'
+import ExperienceSection from './components/experience/Experience.vue'
+import PublicationsSection from './components/Publications/Publications.vue'
 </script>
 
 <template>
     <header>
-        <div class="container mx-auto flex flex-col justify-center">
-            <Title />
-            <Experience />
-            <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav> -->
+        <div class="container mx-auto flex flex-col justify-center my-16">
+            <TitleSection />
+            <ExperienceSection />
+            <PublicationsSection />
         </div>
     </header>
 
@@ -57,7 +55,7 @@ nav a:first-of-type {
 
 @media (min-width: 1024px) {
     header {
-        display: flex;
+        /* display: flex; */
         place-items: center;
         /* padding-right: calc(var(--section-gap) / 2); */
     }

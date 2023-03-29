@@ -29,9 +29,11 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="experience-item flex flex-col mt-3">
+    <div class="experience-item flex flex-col mt-2">
         <div>
-            <a :href="link" target="_blank">{{ company }}</a>
+            <a :href="link" target="_blank"
+                ><h4>{{ company }}</h4></a
+            >
             <h5>{{ position }}</h5>
         </div>
         <div>

@@ -1,22 +1,18 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
     <div class="title container justify-between">
         <div class="text">
             <h1 class="green">Tomás Horacio Ambrogi</h1>
-            <h4>Building software for companies big and small since 2015.</h4>
-            <h4>Building software for companies big and small since 2015.</h4>
-            <h4>Building software for companies big and small since 2015.</h4>
-            <h4>Building software for companies big and small since 2015.</h4>
+            <h3>Building software for companies big and small since 2015.</h3>
         </div>
         <div class="image crop">
             <img
                 alt="Vue logo"
                 class="logo rounded-full"
                 src="@/assets/images/picture_resize.jpeg"
-                width="175"
-                height="175"
+                width="160"
+                height="160"
             />
         </div>
     </div>
