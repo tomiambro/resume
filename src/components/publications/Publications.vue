@@ -1,7 +1,7 @@
 <script setup>
 import { reactive } from 'vue'
-import { Publication } from './publication'
 import PublicationItem from './PublicationItem.vue'
+import { Publication } from './publication.js'
 
 const publications = reactive([
     new Publication(

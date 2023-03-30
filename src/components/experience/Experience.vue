@@ -1,6 +1,7 @@
 <script setup>
 import ExperienceItem from './ExperienceItem.vue'
 import { Experience } from './experience.js'
+
 const experiences = [
     new Experience(
         'Kubikware',
