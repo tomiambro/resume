@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <div class="title container flex-col lg:flex-row items-center my-6">
+    <div class="title container flex-col lg:flex-row items-center lg:my-6">
         <div class="image crop my-4 lg:my-0">
             <img
                 alt="Vue logo"

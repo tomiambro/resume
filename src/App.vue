@@ -7,7 +7,7 @@ import PublicationsSection from './components/publications/Publications.vue'
 
 <template>
     <header>
-        <div class="container mx-auto flex flex-col justify-center my-16">
+        <div class="container mx-auto flex flex-col justify-center lg:my-16">
             <TitleSection />
             <ExperienceSection />
             <PublicationsSection />
