@@ -1,12 +1,12 @@
 <script setup></script>
 
 <template>
-    <div class="title container justify-between">
+    <div class="title container lg:justify-between flex-col lg:flex-row items-center my-6">
         <div class="text">
             <h1 class="green">Tomás Horacio Ambrogi</h1>
             <h3>Building software for companies big and small since 2015.</h3>
         </div>
-        <div class="image crop">
+        <div class="image crop my-4 lg:my-0">
             <img
                 alt="Vue logo"
                 class="logo rounded-full"

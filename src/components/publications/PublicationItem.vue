@@ -34,11 +34,6 @@ h3 {
     font-size: 1.2rem;
 }
 
-.publication-item h1,
-.publication-item h3 {
-    text-align: center;
-}
-
 @media (min-width: 1024px) {
     .publication-item h1,
     .publication-item h3 {

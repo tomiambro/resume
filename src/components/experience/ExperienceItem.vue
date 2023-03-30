@@ -1,29 +1,19 @@
 <script setup>
 import { reactive, computed, onMounted } from 'vue'
+import { Experience } from './experience';
 
 const props = defineProps({
-    company: {
-        type: String,
+    experience: {
+        type: Experience,
         required: true
-    },
-    position: {
-        type: String,
-        required: true
-    },
-    link: {
-        type: String,
-        required: false
-    },
-    info: {
-        type: String,
-        required: false
     }
 })
-let paragraphs = reactive(props.info.split('.'))
+// console.log(props.experience.info)
+let paragraphs = reactive(props.experience.info.split('.'))
 paragraphs = paragraphs.filter((e) => e.length)
 
 onMounted(() => {
-    console.log(paragraphs)
+    // console.log(props.experience)
     console.log('the component is now mounted.')
 })
 </script>
@@ -31,10 +21,10 @@ onMounted(() => {
 <template>
     <div class="experience-item flex flex-col mt-2">
         <div>
-            <a :href="link" target="_blank"
-                ><h4>{{ company }}</h4></a
+            <a :href="experience.link" target="_blank"
+                ><h4>{{ experience.company }}</h4></a
             >
-            <h5>{{ position }}</h5>
+            <h5>{{ experience.position }}</h5>
         </div>
         <div>
             <p v-for="p in paragraphs">{{ p + '.' }}</p>
