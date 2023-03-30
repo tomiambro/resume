@@ -2,7 +2,7 @@
 import { RouterView } from 'vue-router'
 import TitleSection from './components/Title.vue'
 import ExperienceSection from './components/experience/Experience.vue'
-import PublicationsSection from './components/Publications/Publications.vue'
+import PublicationsSection from './components/publications/Publications.vue'
 </script>
 
 <template>
