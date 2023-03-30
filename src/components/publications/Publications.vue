@@ -1,6 +1,6 @@
 <script setup>
 import { reactive } from 'vue'
-import { Publication } from './publication.js'
+import { Publication } from './publication'
 import PublicationItem from './PublicationItem.vue'
 
 const publications = reactive([
@@ -26,7 +26,9 @@ const publications = reactive([
 <template>
     <div class="publications mb-5">
         <div class="subclass"><h2 class="green">Publications</h2></div>
-        <PublicationItem :publications="publications" />
+        <div v-for="p in publications">
+            <PublicationItem :publication="p" />
+        </div>
     </div>
 </template>
 
@@ -43,7 +45,7 @@ const publications = reactive([
     }
 }
 
-.publications div {
+.publications > div {
     padding: 0 15px;
 }
 </style>

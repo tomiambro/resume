@@ -1,9 +1,9 @@
 <script setup>
 import { reactive, computed, onMounted } from 'vue'
-
+import { Publication } from './publication'
 const props = defineProps({
-    publications: {
-        type: Array,
+    publication: {
+        type: Publication,
         required: false
     }
 })
@@ -15,9 +15,9 @@ onMounted(() => {
 
 <template>
     <div class="publication-item flex flex-col mt-2">
-        <div v-for="p in publications" class="my-1">
-            <a :href="p.link" target="_blank"
-                ><h3>{{ p.title }}</h3></a
+        <div class="my-1">
+            <a :href="publication.link" target="_blank"
+                ><h3>{{ publication.title }}</h3></a
             >
         </div>
     </div>

@@ -1,6 +1,6 @@
 <script setup>
 import { reactive, computed, onMounted } from 'vue'
-import { Experience } from './experience';
+import { Experience } from './experience'
 
 const props = defineProps({
     experience: {
@@ -24,7 +24,7 @@ onMounted(() => {
             <a :href="experience.link" target="_blank"
                 ><h4>{{ experience.company }}</h4></a
             >
-            <h5>{{ experience.position }}</h5>
+            <h5 class="italic">{{ experience.position }}</h5>
         </div>
         <div>
             <p v-for="p in paragraphs">{{ p + '.' }}</p>
