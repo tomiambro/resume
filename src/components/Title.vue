@@ -11,9 +11,17 @@
                 height="160"
             />
         </div>
-        <div class="text">
+        <div class="text px-5">
             <h1 class="green">Tomás Horacio Ambrogi</h1>
             <h3>Building software for companies big and small since 2015.</h3>
+            <div class="social-icons flex justify-center lg:justify-start my-3 px-0">
+                <a class="icon mx-3 lg:mx-3" href="https://github.com/tomiambro" target="_blank">
+                    <font-awesome-icon icon="fa-brands fa-github" />
+                </a>
+                <a class="icon mx-3 lg:mx-3" href="https://www.linkedin.com/in/tomas-ambrogi/">
+                    <font-awesome-icon icon="fa-brands fa-linkedin" />
+                </a>
+            </div>
         </div>
     </div>
 </template>
@@ -44,7 +52,8 @@ h3 {
     display: flex;
 }
 
-.title div {
-    padding: 0 15px;
+.social-icons a {
+    color: rgb(72, 72, 72);
+    font-size: 1.6rem;
 }
 </style>

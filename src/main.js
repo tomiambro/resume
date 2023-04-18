@@ -7,6 +7,13 @@ import './assets/main.css'
 import { initializeApp } from 'firebase/app'
 import { getAnalytics } from 'firebase/analytics'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faGithub, faLinkedin)
+
+
 const firebaseConfig = {
     apiKey: 'AIzaSyDUsU9DH82b2UkFYQWe26rUK3skgMFptgM',
     authDomain: 'tomashoracioambrogi.firebaseapp.com',
@@ -20,7 +27,7 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig)
 const analytics = getAnalytics(firebaseApp)
 
-const app = createApp(App)
+const app = createApp(App).component('font-awesome-icon', FontAwesomeIcon)
 
 app.use(router)
 
