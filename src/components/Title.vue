@@ -18,7 +18,7 @@
                 <a class="icon mx-3 lg:mx-3" href="https://github.com/tomiambro" target="_blank">
                     <font-awesome-icon icon="fa-brands fa-github" />
                 </a>
-                <a class="icon mx-3 lg:mx-3" href="https://www.linkedin.com/in/tomas-ambrogi/">
+                <a class="icon mx-3 lg:mx-3" href="https://www.linkedin.com/in/tomas-ambrogi/" target="_blank">
                     <font-awesome-icon icon="fa-brands fa-linkedin" />
                 </a>
             </div>
