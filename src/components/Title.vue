@@ -15,11 +15,14 @@
             <h1 class="green">Tomás Horacio Ambrogi</h1>
             <h3>Building software for companies big and small since 2015.</h3>
             <div class="social-icons flex justify-center lg:justify-start my-3 px-0">
-                <a class="icon mx-3 lg:mx-3" href="https://github.com/tomiambro" target="_blank">
+                <a class="icon mx-3 lg:mx-3" title="Github" href="https://github.com/tomiambro" target="_blank">
                     <font-awesome-icon icon="fa-brands fa-github" />
                 </a>
-                <a class="icon mx-3 lg:mx-3" href="https://www.linkedin.com/in/tomas-ambrogi/" target="_blank">
+                <a class="icon mx-3 lg:mx-3" title="Linkedin" href="https://www.linkedin.com/in/tomas-ambrogi/" target="_blank">
                     <font-awesome-icon icon="fa-brands fa-linkedin" />
+                </a>
+                <a class="icon mx-3 lg:mx-3" title="Testdome certificate" href="https://www.testdome.com/certificates/15b7229d05f444ec9d80d9c8cb68a3e8" target="_blank">
+                    <font-awesome-icon icon="fa-solid fa-igloo" />
                 </a>
             </div>
         </div>
