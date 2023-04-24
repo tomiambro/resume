@@ -8,12 +8,11 @@ const props = defineProps({
         required: true
     }
 })
-// console.log(props.experience.info)
+
 let paragraphs = reactive(props.experience.info.split('.'))
 paragraphs = paragraphs.filter((e) => e.length)
 
 onMounted(() => {
-    // console.log(props.experience)
     console.log('the component is now mounted.')
 })
 </script>
