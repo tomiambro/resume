@@ -24,28 +24,28 @@ const publications = reactive([
 </script>
 
 <template>
-    <div class="publications mb-5">
-        <div class="subclass"><h2 class="green">Publications</h2></div>
+    <div class="publications mb-10">
+        <div class="subclass">
+            <h2 class="text-green-500">Publications</h2>
+        </div>
         <div v-for="p in publications">
             <PublicationItem :publication="p" />
         </div>
     </div>
 </template>
-
+  
 <style scoped>
 .publications h1,
 .publications h3 {
-    text-align: center;
+    @apply text-center;
 }
 
 @media (min-width: 1024px) {
+
     .publications h1,
     .publications h3 {
-        text-align: left;
+        @apply text-left;
     }
 }
-
-.publications > div {
-    padding: 0 15px;
-}
 </style>
+  

@@ -31,27 +31,25 @@ const experiences = [
 
 <template>
     <div class="experience mb-4">
-        <div class="subclass"><h2 class="green">Experience</h2></div>
+        <div class="subclass">
+            <h2 class="text-green-500">Experience</h2>
+        </div>
         <div v-for="e in experiences" class="items">
             <ExperienceItem :experience="e" />
         </div>
     </div>
 </template>
-
+  
 <style scoped>
 .experience h1,
 .experience h3 {
-    text-align: center;
+    @apply text-center;
 }
 
 @media (min-width: 1024px) {
+
     .experience h1,
     .experience h3 {
-        text-align: left;
+        @apply text-left;
     }
-}
-
-.experience > div {
-    padding: 0 15px;
-}
-</style>
+}</style>
