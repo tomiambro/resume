@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <div class="title container flex-col lg:flex-row items-center lg:my-6">
+    <div class="title container flex-col lg:flex-row items-center my-4 lg:my-6">
         <div class="image crop my-4 lg:my-0">
             <img
                 alt="Vue logo"
@@ -24,6 +24,9 @@
                 <a class="icon mx-3 lg:mx-3" title="Testdome certificate" href="https://www.testdome.com/certificates/15b7229d05f444ec9d80d9c8cb68a3e8" target="_blank">
                     <font-awesome-icon icon="fa-solid fa-igloo" />
                 </a>
+            </div>
+            <div class="flex justify-center lg:justify-start">
+                <a class="mx-auto lg:mx-0" href="mailto:tomas.h.ambrogi@gmail.com">tomas.h.ambrogi@gmail.com</a>
             </div>
         </div>
     </div>
