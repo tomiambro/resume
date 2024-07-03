@@ -9,8 +9,11 @@ const props = defineProps({
     }
 })
 
-let paragraphs = reactive(props.experience.info.split('.'))
+let paragraphs = reactive(props.experience.info.split('. '))
 paragraphs = paragraphs.filter((e) => e.length)
+if (paragraphs.length > 1) {
+    paragraphs[0] += "."
+}
 
 onMounted(() => {
     console.log('the component is now mounted.')
@@ -26,7 +29,7 @@ onMounted(() => {
             <h5 class="italic">{{ experience.position }}</h5>
         </div>
         <div>
-            <p v-for="p in paragraphs">{{ p + '.' }}</p>
+            <p v-for="p in paragraphs">{{ p }}</p>
         </div>
     </div>
 </template>

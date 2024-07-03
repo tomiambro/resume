@@ -12,7 +12,7 @@ const experiences = [
     new Experience(
         'Kubikware',
         'Sr Software Developer',
-        'Develop a music distribution API using python and django rest-framework, delivering 30K assets each day.',
+        'Developed a music distribution API using python and django rest-framework, delivering 30K assets each day.',
         'https://www.kubikware.com'
     ),
     new Experience(
