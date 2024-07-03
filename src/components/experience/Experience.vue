@@ -4,6 +4,12 @@ import { Experience } from './experience.js'
 
 const experiences = [
     new Experience(
+        'Gun.io',
+        'Sr Software Developer',
+        'Helping gun.io increase marketshare by building a marketplace using python and django.',
+        'https://www.gun.io'
+    ),
+    new Experience(
         'Kubikware',
         'Sr Software Developer',
         'Develop a music distribution API using python and django rest-framework, delivering 30K assets each day.',
